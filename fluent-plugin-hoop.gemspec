@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "fluent-plugin-hoop"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["TAGOMORI Satoshi"]
@@ -44,12 +44,11 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rdoc>, [">= 0"])
-      s.add_runtime_dependency(%q<fluentd>, [">= 0"])
+      s.add_runtime_dependency(%q<fluentd>, ["~> 0.10.8"])
       s.add_runtime_dependency(%q<fluent-mixin-plaintextformatter>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
-      s.add_runtime_dependency(%q<fluentd>, ["~> 0.10.8"])
       s.add_development_dependency(%q<rake>, [">= 0.9.2"])
       s.add_development_dependency(%q<simplecov>, [">= 0.5.4"])
     else
